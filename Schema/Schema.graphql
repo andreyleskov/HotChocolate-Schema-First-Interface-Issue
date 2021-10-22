@@ -1,0 +1,21 @@
+﻿﻿schema {
+  query: Query
+}
+
+type Query {
+  retrieveObjectWithPolymorphicPropertyType(textProperty: String integerProperty: Int!): ObjectWithPolymorphicPropertyTypes
+}
+
+type SimpleObject implements Base {
+  textProperty: String
+  integerProperty: Int!
+}
+
+type ObjectWithPolymorphicPropertyTypes {
+  interfaceProperty: Base
+}
+
+interface Base {
+  textProperty: String
+  integerProperty: Int!
+}
