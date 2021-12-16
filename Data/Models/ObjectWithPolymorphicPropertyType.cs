@@ -2,11 +2,11 @@
 {
     public class ObjectWithPolymorphicPropertyType
     {
-        public ObjectWithPolymorphicPropertyType(Base interfaceProperty)
+        public ObjectWithPolymorphicPropertyType(SimpleObject interfaceProperty)
         {
             this.interfaceProperty = interfaceProperty;
         }
 
-        public Base interfaceProperty { get; set; }
+        public SimpleObject interfaceProperty { get; set; }
     }
 }
