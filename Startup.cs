@@ -40,7 +40,7 @@ namespace GraphQLServer
             });
         }
 
-        private static string LoadSchema()
+        public static string LoadSchema()
         {
             Assembly thisAssembly = Assembly.GetExecutingAssembly();
 
